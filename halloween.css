@@ -1,0 +1,37 @@
+
+body {
+    background-image: url('./hlwdesktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+@media (max-width: 767px) {
+    body {
+        background-image: url('./hlwdienthoai.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media (min-width: 768px) {
+    .card {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media (min-width: 900px) {
+    .card {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+.error-message {
+    
+    margin-top: 5px;
+    display: none;
+}
