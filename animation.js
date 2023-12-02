@@ -123,4 +123,38 @@ function moveDriver2() {
         }, 1000); // Khoảng thời gian giữa các lần di chuyển
     }, 1000); // Thời gian di chuyển lâu hơn
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const musicButton = document.getElementById("musicButton");
+    const music = document.getElementById("music");
+  
+    let isPlaying = false;
+  
+    musicButton.addEventListener("click", function() {
+      if (isPlaying) {
+        music.pause();
+        musicButton.innerText = "Phát nhạc";
+      } else {
+        music.play();
+        musicButton.innerText = "Ngưng phát nhạc";
+      }
+  
+      isPlaying = !isPlaying;
+    });
+});
 
+document.addEventListener("DOMContentLoaded", function() {
+    const changeBackgroundButton = document.getElementById("changeBackgroundButton");
+    const backgroundDiv = document.getElementById("backgroundDiv");
+    const backgrounds = ['fleximg2', 'fleximg', 'fleximg3'];
+    let currentIndex = 0;
+  
+    changeBackgroundButton.addEventListener("click", function() {
+      // Chuyển đổi giữa các lớp background
+      backgroundDiv.classList.remove(backgrounds[currentIndex]);
+      currentIndex = (currentIndex + 1) % backgrounds.length;
+      backgroundDiv.classList.add(backgrounds[currentIndex]);
+    });
+  });
+  
+  
+  

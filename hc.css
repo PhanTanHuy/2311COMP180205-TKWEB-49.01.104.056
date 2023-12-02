@@ -4,7 +4,7 @@
     position: relative;
     /* width: 100%; */
     height: 800px;
-    background-image: url(./hc.jpg);
+    /* background-image: url(./hc.jpg); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,8 +14,8 @@
 
 #fish {
     position: absolute;
-    width: 400px; /* Đổi kích thước tùy thuộc vào ảnh của bạn */
-    height: 400px;
+    width: 200px; /* Đổi kích thước tùy thuộc vào ảnh của bạn */
+    height: 200px;
     transition: transform 1s; /* Thêm hiệu ứng chuyển động */
 }
 #driver {
@@ -41,4 +41,17 @@
     width: 100px; /* Đổi kích thước tùy thuộc vào ảnh của bạn */
     height: 100px;
     transition: transform 1s; /* Thêm hiệu ứng chuyển động */
+}
+.fleximg {
+    background-image: url(./hc.jpg);
+}
+.fleximg1 {
+    background-image: url(./hc2.jpg);
+}
+.fleximg2 {
+    background-image: url(./hc1.jpg);
+}
+.fleximg3 {
+    background-image: url(./hc3.jpeg);
+
 }
