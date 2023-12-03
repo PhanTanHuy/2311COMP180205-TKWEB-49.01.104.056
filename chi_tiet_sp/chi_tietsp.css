@@ -1,0 +1,32 @@
+@media (max-width: 767px){
+    .hide-on-mobile {
+        display: none;
+    }
+}
+.card {
+    margin-bottom: 20px;
+}
+.redline {
+    color: red;
+
+}
+.bred {
+    font-weight: bold;
+}
+.card {
+    border: solid 0.5px;
+    border-radius: 7px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; 
+}
+.zoomimg img{
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.zoomimg:hover img{
+    transform: scale(1.05); 
+}
+a {
+    text-decoration: none;
+    color: black;
+}
